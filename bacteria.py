@@ -1,14 +1,14 @@
-#Bacteria is a subclass of Prey. It can be infected by phage
+#Bacteria is a subclass of Mobile_Simulton. It can be infected by phage
 
-from prey import Prey
+from mobilesimulton import Mobile_Simulton
 import random,math
 import model
 from phage import Phage
 
-class Bacteria(Prey):
+class Bacteria(Mobile_Simulton):
     radius = 10
     def __init__(self,x,y):
-        Prey.__init__(self,x,y,20,20,random.random()*math.pi*2,5)
+        Mobile_Simulton.__init__(self,x,y,20,20,random.random()*math.pi*2,5)
         self._color = 'yellow'
         self._infected = False
             
